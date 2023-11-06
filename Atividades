@@ -1,0 +1,103 @@
+  ###Questão 1: Faça um programa que mostre "Alo Mundo" na tela.
+print("Alo Mundo")
+
+  ###Questão 2: Faça um programa que peça dois números e mostre a soma.
+a = float(input("Digite um número: "))
+b = float(input("Digite outro número: "))
+print("A soma será",a + b)
+
+  ###Questão 3: Faça um programa que peça a temperatura em Fahrenheit e transforme em Celsius.
+temp = float(input("Digite a temperatura desejada: "))
+print("A temperatura em Celsius é: ",(5*(temp-32)/9))
+
+  ###Questão 4: Faça um programa que peça a altura da pessoa e diga seu peso ideal.
+altura = float(input("Digite sua altura em metros: "))
+print("Seu peso ideal seria de: ",(72.7*altura)-58)
+
+  ###Questão 5: Faça um programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês.
+Calcule e mostre o total do seu salário no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato, 
+faça um programa que nos dê: salário bruto. quanto pagou ao INSS. quanto pagou ao sindicato. o salário líquido. calcule os descontos e o salário líquido, 
+conforme a tabela abaixo:
+
++ Salário Bruto : R$
+
+- IR (11%) : R$
+
+- INSS (8%) : R$
+
+- Sindicato ( 5%) : R$
+
+= Salário Liquido : R$
+Obs.: Salário Bruto - Descontos = Salário Líquido.
+
+
+ganho = float(input("Quanto você ganha por hora? "))
+hora = float(input("Quantas horas você trabalha por mês? "))
+a = ganho*hora
+ir = a * (11 / 100)
+inss = a * (8 / 100)
+sindicato = a * (5 / 100)
+total = ir + inss + sindicato
+sal = a - total
+print("O total gasto com impostos será de : ",total)
+print("O salário bruto é de: ",a)
+print("O salário líquido é de: ",sal)
+
+  ###Questão 6: Faça um programa que verifique o sexo, se for "M", será masulino.
+"F", será feminino, caso não seja nehuma, mostre "sexo inválido".
+
+sexo = str(input("Qual o seu sexo? M ou F: "))
+if sexo == "M" or sexo == "m":
+    print("Seu sexo é masculino")
+elif sexo == "F" or sexo == "f":
+    print("Seu sexo é feminino")
+else:
+    print("Sexo inválido!!")
+
+  ###Questão 7: Faça um programa que veja o número correspondente ao número da semana:
+1-Domingo, 2-Segunda, digite "Inválido" caso não seja um número correto.
+
+dia = int(input("Digite o dia da semana: "))
+if dia == 1:
+    print("O dia é Domingo")
+elif dia == 2:
+    print("O dia é Segunda-feira")
+elif dia == 3:
+    print("O dia é Terça-feira")
+elif dia == 4:
+    print("O dia é Quarta-feira")
+elif dia == 5:
+    print("O dia é Quinta-feira")
+elif dia == 6:
+    print("O dia é Sexta-feira")
+elif dia == 7:
+
+  ###Questão 8: Faça um programa que peça o valor de três produtos, e mostre qual deles é o mais barato.
+
+a = float(input("Digite o primeiro preço: "))
+b = float(input("Digite o segundo preço: "))
+c = float(input("Digite o terceiro preço: "))
+if a<b and a<c:
+    print("O item sugerido é o item de",a)
+elif b<a and b<c:
+    print("O item sugerido é o item de",b)
+elif c<a and c<b:
+    print("O item sugerido é o item de",c)
+else:
+    print("Não foi possível realizar a operação!")
+
+  ###Questão 9: Faça um programa que peça 5 números, mostre a soma e a média deles.
+
+a = float(input("Informe um número: "))
+b = float(input("Informe outro número: "))
+c = float(input("Informe outro número: "))
+d = float(input("Informe outro número: "))
+e = float(input("Informe outro número: "))
+soma = a+b+c+d+e
+print("A soma deles é", soma)
+
+###Questão 10: Faça um programa que calcule a área de um quadrado, e mostre o dobro da área.
+
+a = float(input("Digite o lado da área: "))
+área = a*4
+print("O dobro da área é: ", área*2)
