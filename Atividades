@@ -1,16 +1,20 @@
   ###Questão 1: Faça um programa que mostre "Alo Mundo" na tela.
+
 print("Alo Mundo")
 
   ###Questão 2: Faça um programa que peça dois números e mostre a soma.
+
 a = float(input("Digite um número: "))
 b = float(input("Digite outro número: "))
 print("A soma será",a + b)
 
   ###Questão 3: Faça um programa que peça a temperatura em Fahrenheit e transforme em Celsius.
+
 temp = float(input("Digite a temperatura desejada: "))
 print("A temperatura em Celsius é: ",(5*(temp-32)/9))
 
   ###Questão 4: Faça um programa que peça a altura da pessoa e diga seu peso ideal.
+
 altura = float(input("Digite sua altura em metros: "))
 print("Seu peso ideal seria de: ",(72.7*altura)-58)
 
